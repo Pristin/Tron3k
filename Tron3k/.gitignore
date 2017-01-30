@@ -1,0 +1,53 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Visual Studio files
+*.sdu
+*.sdf
+*.opensdf
+*.suo
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+#debug files
+*.pdb
+*.ilk
+*.enc
+
+*.exp
+
+*.sdf
+*.v12.suo
+*.tlog
+*.log
+*.lastbuildstate
+*.idb
+Tron3k/Debug/GameFiles/Config/player.ini
+*.opendb
+*.enc
+*.ipdb
+Tron3k/Release/Physics.iobj

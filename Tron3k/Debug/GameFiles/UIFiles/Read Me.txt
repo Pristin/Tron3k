@@ -1,0 +1,54 @@
+//The first two needs to be in all txt and only at the start
+Number of menus   //This value exists only once.
+Menu id		  //Says which menu it is for example main menu eller settings. After this row the button information begins.
+
+Button: //Here is what the button needs
+x y		  //x and y for the center of the button
+class id	  //Says which class the button needs to be.
+texture1	  //First texture and also the texture it shall begin with.
+texture2	  //The second texture
+UniqueKey	  //A value that says what will happen when its clicked on. If the button doesn't have any event then just leave it at -1
+hoverKey	  //1 if it should change texture when hovered over and 0 if not. Only works for Button objects so put it at 0 for everything else.
+
+StaticTextureBox: //Here is what the staticTextureBox needs
+x y		  //x and y for the center of the box.
+class id	  //Says which class the button needs to be.
+can be scaled	  //1 and higher = true, 0 = false. Tells if the box should scaled depending on a variable for example energy.
+texId		  //If the above is true set this
+number of textures //Only needed if the class id is 1
+texture		   //As many textures as the row above says
+.
+.
+.
+
+Slider: //Here is what the slider needs
+x y
+class id
+texture1
+texture2
+UniqueKey
+
+InputBox: //Here is what the inputBox needs
+x y		       //x and y for the center of the box.
+class id	       //Says which class the button needs to be.
+texture1	       //First texture and also the texture it shall begin with.
+texture2	       //Second texture, its two textures since the ingame changed depending on which team you join.
+textId		       //
+dynamic text x offset  //The amount the text needs to be moved in order to be alined with the texture in x
+dynamic text y offset  //The amount the text needs to be moved in order to be alined with the texture in y
+texture size           //Size of the text
+UniqueKey	  //A value that says what will happen when its clicked on. If the button doesn't have any event then just leave it at -1
+
+//Class id 5
+x y		  //x and y for the center of the box.
+class id	  //Says which class the button needs to be.
+noText			//Says if the object is going to render text. 1 for yes and the rest for no
+if(noText == 1)
+	dynamic text x offset  //The amount the text needs to be moved in order to be alined with the texture in x
+	dynamic text y offset  //The amount the text needs to be moved in order to be alined with the texture in y
+	texture size           //Size of the text
+number of textures //Only needed if the class id is 1
+texture		   //As many textures as the row above says
+.
+.
+.

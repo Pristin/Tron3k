@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\CameraInput.cpp" />
+    <ClCompile Include="Core\Console.cpp" />
+    <ClCompile Include="Core\Core.cpp" />
+    <ClCompile Include="Core\Game\Game.cpp" />
+    <ClCompile Include="Core\Game\Gamemode.cpp" />
+    <ClCompile Include="Core\Game\Gamemodes\KingOfTheHill.cpp" />
+    <ClCompile Include="Core\Game\Player.cpp" />
+    <ClCompile Include="Core\Game\Role\Consumable\Consumable.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effect.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\BatteryFieldSlow.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\BatteryFieldSpeed.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\CleanseNova.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\DoubleDamagePickup.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\Explosion.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\HealthPack.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\HSCPickup.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\LightwallEffect.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\ThermiteCloud.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\ThunderDomeEffect.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Effects\Vacuum.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifier.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\BatterySlow.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\BatterySpeed.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\DoubleDamageMod.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\HackingDartModifier.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\LightSpeed.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\LightWallLockedControls.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\Overcharge.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\SprintControlLock.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\TrapperShareAmmo.cpp" />
+    <ClCompile Include="Core\Game\Role\PlayerEffects\Modifiers\TrueGrit.cpp" />
+    <ClCompile Include="Core\Game\Role\Role.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\Special.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\CleanseNovaSpecial.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\Dash.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\GrapplingHookSpecial.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\HackingDartSpecial.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\LightSpeedSpecial.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\Lightwall.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\MultiJump.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\SprintD.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\ThunderDome.cpp" />
+    <ClCompile Include="Core\Game\Role\Special\SpecialTypes\WallJump.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\Bullet.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\GrenadeShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\ShotgunPellet.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\ThermiteGrenade.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\DestroyerBullets\CleanseBomb.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\DestroyerBullets\PlasmaShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\BatterySlowShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\BatterySpeedShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\GrapplingHook.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\FusionShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\VacuumGrenade.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\DiscShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\HackingDart.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\MeleeAttack.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\BulletPulseShot.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\ClusterGrenade.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\Clusterling.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\Weapon.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Brute\GrenadeLauncher.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Brute\Shotgun.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Destroyer\EnergyShield.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Destroyer\PlasmaAutorifle.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Manipulator\BatteryFields.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Manipulator\FusionCannon.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Mobility\DiscGun.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Mobility\Melee.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Trapper\EnergyBoost.cpp" />
+    <ClCompile Include="Core\Game\Role\Weapon\WeaponTypes\Trapper\PulseRifle.cpp" />
+    <ClCompile Include="Core\Input.cpp" />
+    <ClCompile Include="Core\ui\Button.cpp" />
+    <ClCompile Include="Core\ui\HideAble.cpp" />
+    <ClCompile Include="Core\ui\InputBox.cpp" />
+    <ClCompile Include="Core\ui\Slider.cpp" />
+    <ClCompile Include="Core\ui\StaticTextureBoxes.cpp" />
+    <ClCompile Include="Core\ui\UI.cpp" />
+    <ClCompile Include="Core\ui\UIManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Network\Client.cpp" />
+    <ClCompile Include="Network\Connection.cpp" />
+    <ClCompile Include="Network\Netlog.cpp" />
+    <ClCompile Include="Network\Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\AnimationState.h" />
+    <ClInclude Include="Core\CameraInput.h" />
+    <ClInclude Include="Core\Console.h" />
+    <ClInclude Include="Core\Core.h" />
+    <ClInclude Include="Core\Game\Game.h" />
+    <ClInclude Include="Core\Game\GameDataIndex.h" />
+    <ClInclude Include="Core\Game\Gamemode.h" />
+    <ClInclude Include="Core\Game\Gamemodes\KingOfTheHill.h" />
+    <ClInclude Include="Core\Game\GameObject.h" />
+    <ClInclude Include="Core\Game\ParticleStruct.h" />
+    <ClInclude Include="Core\Game\Player.h" />
+    <ClInclude Include="Core\Game\Role\Consumable\Consumable.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effect.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\AllEffects.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\BatteryFieldSlow.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\BatteryFieldSpeed.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\CleanseNova.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\DoubleDamagePickup.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\Explosion.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\HealthPack.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\HSCPickup.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\LightwallEffect.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\ThermiteCloud.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\ThunderDomeEffect.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Effects\Vacuum.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifier.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\AllModifiers.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\BatterySlow.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\BatterySpeed.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\DoubleDamageMod.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\HackingDartModifier.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\LightSpeed.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\LightWallLockedControls.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\Overcharge.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\SprintControlLock.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\TrapperShareAmmo.h" />
+    <ClInclude Include="Core\Game\Role\PlayerEffects\Modifiers\TrueGrit.h" />
+    <ClInclude Include="Core\Game\Role\Role.h" />
+    <ClInclude Include="Core\Game\Role\Special\Special.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\AllSpecials.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\CleanseNovaSpecial.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\Dash.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\GrapplingHookSpecial.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\HackingDartSpecial.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\LightSpeedSpecial.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\Lightwall.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\MultiJump.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\SprintD.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\ThunderDome.h" />
+    <ClInclude Include="Core\Game\Role\Special\SpecialTypes\WallJump.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\Bullet.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\AllBullets.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\GrenadeShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\ShotgunPellet.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\BruteBullets\ThermiteGrenade.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\DestroyerBullets\CleanseBomb.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\DestroyerBullets\PlasmaShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\BatterySlowShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\BatterySpeedShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\GrapplingHook.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\FusionShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\ManipulatorBullets\VacuumGrenade.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\DiscShot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\HackingDart.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\MobilityBullets\MeleeAttack.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\bulletpulseshot.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\ClusterGrenade.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\BulletTypes\TrapperBullets\Clusterling.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\Weapon.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\AllWeapons.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Brute\GrenadeLauncher.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Brute\Shotgun.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Destroyer\EnergyShield.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Destroyer\PlasmaAutorifle.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Manipulator\BatteryFields.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Manipulator\FusionCannon.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Mobility\DiscGun.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Mobility\Melee.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Trapper\EnergyBoost.h" />
+    <ClInclude Include="Core\Game\Role\Weapon\WeaponTypes\Trapper\PulseRifle.h" />
+    <ClInclude Include="Core\Input.h" />
+    <ClInclude Include="Core\sharedStructs.h" />
+    <ClInclude Include="Core\ui\Button.h" />
+    <ClInclude Include="Core\ui\HideAble.h" />
+    <ClInclude Include="Core\ui\InputBox.h" />
+    <ClInclude Include="Core\ui\Slider.h" />
+    <ClInclude Include="Core\ui\StaticTextureBoxes.h" />
+    <ClInclude Include="Core\ui\UI.h" />
+    <ClInclude Include="Core\ui\UIElements.h" />
+    <ClInclude Include="Core\ui\UIManager.h" />
+    <ClInclude Include="Core\ui\uiVertex.h" />
+    <ClInclude Include="Core\ui\VertexBufferUI.h" />
+    <ClInclude Include="Core\ui\Vertex_ui.h" />
+    <ClInclude Include="Network\Client.h" />
+    <ClInclude Include="Network\Connection.h" />
+    <ClInclude Include="Network\NetIndex.h" />
+    <ClInclude Include="Network\Netlog.h" />
+    <ClInclude Include="Network\Server.h" />
+    <ClInclude Include="Network\Topology.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Project.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Debug\GameFiles\Textures\Logo.ico" />
+    <Image Include="Logo.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{93453B35-651C-43D5-958F-5A97A3830548}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Project</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Dependencies\SFML;$(SolutionDir)\Dependencies\GLFW\include;$(SolutionDir)\Dependencies\glm;$(SolutionDir)\Dependencies\vld;$(SolutionDir)\Dependencies\glew-1.11.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Dependencies\SFML\lib;$(SolutionDir)\Debug;$(SolutionDir)\Dependencies\GLFW\lib-vc2015;$(SolutionDir)\Dependencies\glew-1.11.0\lib\Release\Win32;$(LibraryPath)</LibraryPath>
+    <TargetName>NeonDawn_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Dependencies\GLFW\include;$(SolutionDir)\Dependencies\SFML;$(SolutionDir)\Dependencies\glm;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Dependencies\GLFW\lib-vc2015;$(SolutionDir)\Dependencies\SFML\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)\Dependencies\SFML;$(SolutionDir)\Dependencies\GLFW\include;$(SolutionDir)\Dependencies\glm;$(SolutionDir)\Dependencies\vld;$(SolutionDir)\Dependencies\glew-1.11.0\include;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Dependencies\SFML\lib;$(SolutionDir)\Release;$(SolutionDir)\Dependencies\GLFW\lib-vc2015;$(SolutionDir)\Dependencies\glew-1.11.0\lib\Release\Win32;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+    <TargetName>NeonDawn</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glew32.lib;SoundPlayer_debug.lib;RenderPipeline_debug.lib;Physics_debug.lib;sfml-system-d.lib;sfml-network-d.lib;glfw3.lib;sfml-audio-d.lib;ogg.lib;openal32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>MSVCRT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glfw3.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-audio-d.lib;ogg.lib;openal32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glew32.lib;SoundPlayer.lib;RenderPipeline.lib;Physics.lib;sfml-system.lib;sfml-network.lib;glfw3.lib;sfml-audio.lib;ogg.lib;openal32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
